@@ -24,6 +24,10 @@ This program plots an interactive graph of key economic indicators. It is curren
 Example ouput is given below:
 ![image](image.png)
 
+<iframe src="https://ignaz.io/plotly_graph.html" width="600" height="400"></iframe>
+
+[View interactive graph](https://ignaz.io/plotly_graph.html)
+
 Hovering over any of the datapoints will display information as in the **guam** example.
 
 ## TODO
