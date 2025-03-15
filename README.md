@@ -24,6 +24,8 @@ This program plots an interactive graph of key economic indicators. It is curren
 Example ouput is given below:
 ![image](image.png)
 
+[View interactive graph](https://ignaz.io/data/world_bank/)
+
 Hovering over any of the datapoints will display information as in the **guam** example.
 
 ## TODO
