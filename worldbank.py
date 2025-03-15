@@ -10,7 +10,7 @@ def get_indicators(countries=['all'], indicators=['SP.DYN.TFRT.IN','SP.POP.TOTL'
     response = requests.get(url).json()
     print(response)
 
-    indicator_names = {entry["indicator"]["id"]: entry["indicator"]["value"] for entry in response[1]}
+    # indicator_names = {entry["indicator"]["id"]: entry["indicator"]["value"] for entry in response[1]}
 
     data = pd.DataFrame([
         {
