@@ -32,3 +32,26 @@ def cache():
             return result
         return wrapper
     return decorator
+
+with open('data/dictionaries/ordbok.csv') as f:
+    ordbok = {
+        line.split(';')[0]: line.split(';')[1].strip()
+        for line in f.readlines()
+    }
+
+def translate(key, language='no'):
+    assert language in ['en', 'no']
+    if language == 'no':
+        translation_dict = ordbok
+    elif language == 'en':
+        return key
+    if isinstance(key, list):
+        for k in key:
+            assert k in translation_dict, key
+        return [translation_dict[k] for k in key]
+    elif isinstance(key, str):
+        assert key in ordbok, key
+        return translation_dict[key]
+    
+def eng2no(key):
+    translate(language='no')

@@ -28,8 +28,8 @@ def melted():
     var_name='category',
     value_name='population'
     )
-    df_melted.sort_values(by=['category', 'population'], ascending=False, inplace=True)
+    df_melted = df_melted[['region', 'sub-region', 'country', 'category', 'population']] # reorder columns
     return df_melted
 
-print(merged_data())
+print(melted())
 # print(df_melted)
